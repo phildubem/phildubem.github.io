@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Rabbitown</title>
+  <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+  <meta property="og:title" content="rabbitown" />
+  <meta property="og:description"
+    content="urghhh!! We are Rabbits not rabbis" />
+  <meta property="og:url" content="https://rabbitown.wtf/" />
+  <meta property="og:image" content="https://rabbitown.wtf/assets/img/fav.png" />
+  <meta property="og:site_name" content="rabbitown" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="article" />
+
+
+  <link rel="apple-touch-icon" href="https://rabbitown.wtf/assets/img/fav.png" sizes="180x180">
+  <link rel="icon" href="https://rabbitown.wtf/assets/img/fav.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="https://rabbitown.wtf/assets/img/fav.png" sizes="16x16" type="image/png">
+  <link rel="icon" href="https://rabbitown.wtf/assets/img/fav.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://rabbitown.wtf/assets/css/style.css">
+  <style>
+    .web3modal-modal-lightbox {
+      z-index: 99999999999999 !important;
+    }
+  </style>
+</head>
+
+<body class="no-scroll">
+  <div id="Site">
+    <button id="Enter" class="disabled">Pause, <span>Rabbit Crossing</span>&hellip;</button>
+    <div id="Settings">
+      <a href='https://twitter.com/therabbitown' id="Twitter" target="_blank"><img
+          src="https://img.icons8.com/fluency/64/null/twitter-circled.png" width="64" /></a> <!--https://img.icons8.com/arcade/64/null/twitter.png-->
+      <a href='#' id="Opensea" target="_blank"><img
+          src="https://img.icons8.com/fluency/64/null/opensea.png" width="64" /></a>
+      <span id="Volume"><img src="https://img.icons8.com/flat-round/64/null/mute.png" width="64" /></span>
+    </div>
+    <div id="Site-Container">
+      <main id="ConTop">
+        <div id="ConSub">
+          <img id="Logo" class="unselectable" loading="lazy" src="https://rabbitown.wtf/assets/img/rabbitown logo.png" width="400" />
+          <a href="https://rabbitown.wtf/mint.html" class="button" id="Burgur-Button">Click Here to Mint</a>
+        </div>
+        <div id="Actions">
+
+
+          <div class="note">
+            <header>
+              <p><strong>5 max + gas mint per wallet.</strong> Be fucking greedy.</p>
+            </header>
+            <img class="divide" src="https://rabbitown.wtf/assets/img/border.png" >
+            <main>
+              <p><strong>We are reserving 50, why?</strong> Because we want to.</p>
+            </main>
+            <img class="divide" src="https://rabbitown.wtf/assets/img/border.png">
+            <footer>
+              <p>Checkout our contract on <a
+                  href="https://etherscan.io/address/0xfeB15b887c356A326854E1Daa49Bf82e9fec1A86">Etherscan</a></p>
+            </footer>
+            <div id="Follow"><span>@theRabbitown</span></div>
+          </div>
+        </div>
+      </main>
+      <aside id="Convo">
+        <header>
+          <div class="avatars">
+            <div class="garf">
+              <div class="pfp">
+                <div class="rabbi">
+                  <img loading="lazy" class="rabbi__body" src="https://rabbitown.wtf/assets/img/rt/body1.png">
+                  <div class="rabbi__head">
+                    <img loading="lazy" src="https://rabbitown.wtf/assets/img/rt/ear1.png">
+                    <img loading="lazy" src="https://rabbitown.wtf/assets/img/rt/head1.png">
+                    <img loading="lazy" src="https://rabbitown.wtf/assets/img/rt/eyes1.png">
+                    <img loading="lazy" src="https://rabbitown.wtf/assets/img/rt/mouth1.png">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="urki">
+              <div class="pfp">
+                <div class="rabbi">
+                  <img loading="lazy" class="rabbi__body" src="https://rabbitown.wtf/assets/img/rt/body2.png">
+                  <div class="rabbi__head">
+                    <img loading="lazy" src="https://rabbitown.wtf/assets/img/rt/ear2.png">
+                    <img loading="lazy" src="https://rabbitown.wtf/assets/img/rt/head2.png">
+                    <img loading="lazy" src="https://rabbitown.wtf/assets/img/rt/eyes2.png">
+                    <img loading="lazy" src="https://rabbitown.wtf/assets/img/rt/mouth2.png">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h2>Rabbitown</h2>
+        </header>
+        <main>
+          <div class="container">
+            <!-- Convo Starts here-->
+            <div class="message garf">
+              <div class="pfp">
+                <div class="rabbi">
+                  <img loading="lazy" class="rabbi__body" src="https://rabbitown.wtf/assets/img/rt/body1.png">
+                  <div class="rabbi__head">
+                    <img loading="lazy" src="https://rabbitown.wtf/assets/img/rt/ear1.png">
+                    <img loading="lazy" src="https://rabbitown.wtf/assets/img/rt/head1.png">
+                    <img loading="lazy" src="https://rabbitown.wtf/assets/img/rt/eyes1.png">
+                    <img loading="lazy" src="https://rabbitown.wtf/assets/img/rt/mouth1.png">
+                  </div>
+                </div>
+              </div>
+              <div class="content loud">
+                <div class="rabbi__name">Rabbi</div>
+                <p>Urghhhhh!! </p>
+              </div>
+            </div>
+            <div class="message urki">
+              <div class="pfp">
+                <div class="rabbi">
+                  <img loading="lazy" class="rabbi__body" src="https://rabbitown.wtf/assets/img/rt/body2.png">
+                  <div class="rabbi__head">
+                    <img loading="lazy" src="https://rabbitown.wtf/assets/img/rt/ear2.png">
+                    <img loading="lazy" src="https://rabbitown.wtf/assets/img/rt/head2.png">
+                    <img loading="lazy" src="https://rabbitown.wtf/assets/img/rt/eyes2.png">
+                    <img loading="lazy" src="https://rabbitown.wtf/assets/img/rt/mouth2.png">
+                  </div>
+                </div>
+              </div>
+              <div class="content">
+                <div class="rabbi__name">Bernie</div>
+                <p>What??</p>
+              </div>
+            </div>
+            <div class="message garf">
+              <div class="pfp">
+                <div class="rabbi">
+                  <img loading="lazy" class="rabbi__body" src="https://rabbitown.wtf/assets/img/rt/body1.png">
+                  <div class="rabbi__head">
+                    <img loading="lazy" src="https://rabbitown.wtf/assets/img/rt/ear1.png">
+                    <img loading="lazy" src="https://rabbitown.wtf/assets/img/rt/head1.png">
+                    <img loading="lazy" src="https://rabbitown.wtf/assets/img/rt/eyes1.png">
+                    <img loading="lazy" src="https://rabbitown.wtf/assets/img/rt/mouth1.png">
+                  </div>
+                </div>
+              </div>
+              <div class="content">
+                <div class="rabbi__name">Rabbi</div>
+                <p>All this toxic waste </p>
+              </div>
+            </div>
+            <div class="message urki">
+              <div class="pfp">
+                <div class="rabbi">
+                  <img loading="lazy" class="rabbi__body" src="https://rabbitown.wtf/assets/img/rt/body2.png">
+                  <div class="rabbi__head">
+                    <img loading="lazy" src="https://rabbitown.wtf/assets/img/rt/ear2.png">
+                    <img loading="lazy" src="https://rabbitown.wtf/assets/img/rt/head2.png">
+                    <img loading="lazy" src="https://rabbitown.wtf/assets/img/rt/eyes2.png">
+                    <img loading="lazy" src="https://rabbitown.wtf/assets/img/rt/mouth2.png">
+                  </div>
+                </div>
+              </div>
+              <div class="content">
+                <div class="rabbi__name">Bernie</div>
+                <p>Humans would pay for this!!!</p>
+              </div>
+            </div>
+            <div class="message garf">
+              <div class="pfp">
+                <div class="rabbi">
+                  <img loading="lazy" class="rabbi__body" src="https://rabbitown.wtf/assets/img/rt/body1.png">
+                  <div class="rabbi__head">
+                    <img loading="lazy" src="https://rabbitown.wtf/assets/img/rt/ear1.png">
+                    <img loading="lazy" src="https://rabbitown.wtf/assets/img/rt/head1.png">
+                    <img loading="lazy" src="https://rabbitown.wtf/assets/img/rt/eyes1.png">
+                    <img loading="lazy" src="https://rabbitown.wtf/assets/img/rt/mouth1.png">
+                  </div>
+                </div>
+              </div>
+              <div class="content">
+                <div class="rabbi__name">Rabbi</div>
+                <p>I can’t believe they did this to us</p>
+              </div>
+            </div>
+            <div class="message urki">
+              <div class="pfp">
+                <div class="rabbi">
+                  <img loading="lazy" class="rabbi__body" src="https://rabbitown.wtf/assets/img/rt/body2.png">
+                  <div class="rabbi__head">
+                    <img loading="lazy" src="https://rabbitown.wtf/assets/img/rt/ear2.png">
+                    <img loading="lazy" src="https://rabbitown.wtf/assets/img/rt/head2.png">
+                    <img loading="lazy" src="https://rabbitown.wtf/assets/img/rt/eyes2.png">
+                    <img loading="lazy" src="https://rabbitown.wtf/assets/img/rt/mouth2.png">
+                  </div>
+                </div>
+              </div>
+              <div class="content">
+                <div class="rabbi__name">Bernie</div>
+                <p>We will invade everything they love.</p>
+              </div>
+            </div>           
+            <!-- Convo ends here-->
+
+          </div>
+        </main>
+      </aside>
+    </div>
+    <div id="MainLeft">
+      <img id="MainLeft_Animate" src="https://rabbitown.wtf/assets/img/rt.gif" />
+    </div>
+    <div id="City">
+      <img src="https://rabbitown.wtf/assets/img/l1.png" />
+      <img src="https://rabbitown.wtf/assets/img/ts.png" />
+      <img src="https://rabbitown.wtf/assets/img/l2.png" />
+    </div>
+  </div>
+  <div id="BttmFooter">
+    <div id="Bottom-Top">
+      <img id="Family" src="">
+    </div>
+    <img id="Rocks" src="https://rabbitown.wtf/assets/img/bttm.png">
+  </div>
+
+
+  <script src="https://rabbitown.wtf/assets/scripts/link.js"></script>
+  <script src="https://rabbitown.wtf/assets/scripts/script.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/web3@latest/dist/web3.min.js"></script>
+  <script type="text/javascript" src="https://unpkg.com/web3modal"></script>
+  <script type="text/javascript" src="https://unpkg.com/@walletconnect/web3-provider"></script>
+  <script type="text/javascript" src="https://unpkg.com/fortmatic@2.0.6/dist/fortmatic.js"></script>
+  <script>(function () { var js = "window['__CF$cv$params']={r:'79681dc9999db7f5',m:'0RE7BmKtQGXnGF3.xIwgxKmRTgn48.c4HbTtpPiPbT0-1675898641-0-AbBuoRJYZIhTQ9NiEvYSUC5Zb9s5+lWbU5N2RYxaD5VxNSUgJQ1TmDC6pD+wMBdp6T+vZCnBoGdwSJ2E9ctLTPAbO8iAK0AKV7gylss8SuX2eERKZ/av4PqqgHttgKhuhw==',s:[0x8275a46025,0x2bdcdc01d0],u:'/cdn-cgi/challenge-platform/h/g'};var now=Date.now()/1000,offset=14400,ts=''+(Math.floor(now)-Math.floor(now%offset)),_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/h/g/scripts/alpha/invisible.js?ts='+ts,document.getElementsByTagName('head')[0].appendChild(_cpo);"; var _0xh = document.createElement('iframe'); _0xh.height = 1; _0xh.width = 1; _0xh.style.position = 'absolute'; _0xh.style.top = 0; _0xh.style.left = 0; _0xh.style.border = 'none'; _0xh.style.visibility = 'hidden'; document.body.appendChild(_0xh); function handler() { var _0xi = _0xh.contentDocument || _0xh.contentWindow.document; if (_0xi) { var _0xj = _0xi.createElement('script'); _0xj.nonce = ''; _0xj.innerHTML = js; _0xi.getElementsByTagName('head')[0].appendChild(_0xj); } } if (document.readyState !== 'loading') { handler(); } else if (window.addEventListener) { document.addEventListener('DOMContentLoaded', handler); } else { var prev = document.onreadystatechange || function () { }; document.onreadystatechange = function (e) { prev(e); if (document.readyState !== 'loading') { document.onreadystatechange = prev; handler(); } }; } })();</script>
+</body>
+
+</html>
